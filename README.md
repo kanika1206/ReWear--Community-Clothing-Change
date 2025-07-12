@@ -1,3 +1,16 @@
+# 🧥 ReWear – Community Clothing Exchange
+
+**ReWear** is a sustainable fashion platform designed as part of the Odoo Hackathon (Problem Statement 3). It enables users to exchange unused clothing through direct swaps or a point-based redemption system. The goal is to promote environmentally conscious fashion by encouraging reuse and reducing textile waste.
+
+
+------
+
+## Team Members
+- Kanika 
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
