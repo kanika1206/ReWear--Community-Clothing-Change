@@ -6,10 +6,13 @@
 ------
 
 ## Team Members
-- Kanika 
+- Kanika(Team Leader) : 2023ucs0099@iitjammu.ac.in
+- Japnoor Kaur : 2023uma0215@iitjammu.ac.in
+- Kiran Sehrawat : 2023ucs0099@iitjammu.ac.in
+- Isha Singh : 2023uma0214@iitjammu.ac.in 
 
 
-
+---
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 

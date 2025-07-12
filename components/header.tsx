@@ -35,6 +35,13 @@ export function Header() {
               <Link href="/products/women" className="text-lg font-medium">
                 Women
               </Link>
+              <Link href="/ai-recommendations" className="text-lg font-medium text-blue-500 flex items-center gap-1">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500/80"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                AI Recommendations
+              </Link>
               <Link href="/about" className="text-lg font-medium">
                 About
               </Link>
@@ -61,6 +68,16 @@ export function Header() {
           </Link>
           <Link href="/products/women" className="font-medium transition-colors hover:text-primary">
             Women
+          </Link>
+          <Link 
+            href="/ai-recommendations" 
+            className="font-medium bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 py-1 rounded-full hover:opacity-90 transition-opacity flex items-center gap-1"
+          >
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white/80"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+            </span>
+            AI Recommendations
           </Link>
         </nav>
 
