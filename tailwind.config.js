@@ -9,25 +9,51 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: '2rem',
       screens: {
-        "2xl": "1400px",
+        '2xl': '1400px',
       },
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        border: 'hsl(var(--border))',
+        input: 'hsl(var(--input))',
+        ring: 'hsl(var(--ring))',
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
         primary: {
-          DEFAULT: "hsl(var(--foreground))",
-          foreground: "hsl(var(--background))",
+          DEFAULT: '#0d9488', // teal-600
+          foreground: '#ffffff',
+          50: '#f0fdfa',
+          100: '#ccfbf1',
+          200: '#99f6e4',
+          300: '#5eead4',
+          400: '#2dd4bf',
+          500: '#14b8a6',
+          600: '#0d9488',
+          700: '#0f766e',
+          800: '#115e59',
+          900: '#134e4a',
+          950: '#042f2e',
         },
         secondary: {
-          DEFAULT: "hsl(var(--foreground) / 0.05)",
-          foreground: "hsl(var(--foreground))",
+          DEFAULT: '#0e7490', // cyan-700
+          foreground: '#ffffff',
+          50: '#ecfeff',
+          100: '#cffafe',
+          200: '#a5f3fc',
+          300: '#67e8f9',
+          400: '#22d3ee',
+          500: '#06b6d4',
+          600: '#0891b2',
+          700: '#0e7490',
+          800: '#155e75',
+          900: '#164e63',
+          950: '#083344',
+        },
+        accent: {
+          DEFAULT: '#06b6d4', // cyan-500
+          foreground: '#ffffff',
         },
         destructive: {
           DEFAULT: "hsl(0, 84.2%, 60.2%)",
