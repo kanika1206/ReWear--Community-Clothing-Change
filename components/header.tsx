@@ -94,7 +94,21 @@ export function Header() {
           </Link>
         </nav>
 
-        <div className="ml-auto flex items-center gap-2">
+        <div className="ml-auto flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4">
+            <Link 
+              href="/auth/signin" 
+              className="text-sm font-medium hover:text-emerald-600 transition-colors"
+            >
+              Sign In
+            </Link>
+            <Link 
+              href="/auth/signup"
+              className="text-sm font-medium bg-emerald-600 text-white px-4 py-2 rounded-md hover:bg-emerald-700 transition-colors"
+            >
+              Sign Up
+            </Link>
+          </div>
           {isSearchOpen ? (
             <div className="relative flex items-center">
               <Input type="search" placeholder="Search products..." className="w-[200px] md:w-[300px]" autoFocus />
@@ -104,20 +118,18 @@ export function Header() {
               </Button>
             </div>
           ) : (
-            <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)}>
+            <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className="md:ml-4">
               <Search className="h-5 w-5" />
               <span className="sr-only">Search</span>
             </Button>
           )}
-
+          <Link href="/cart">
+            <CartBadge />
+          </Link>
           <Button variant="ghost" size="icon">
             <User className="h-5 w-5" />
             <span className="sr-only">Account</span>
           </Button>
-
-          <Link href="/cart">
-            <CartBadge />
-          </Link>
         </div>
       </div>
     </header>
