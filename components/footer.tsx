@@ -1,119 +1,55 @@
 import Link from "next/link"
-import { Facebook, Instagram, Twitter } from "lucide-react"
 
 export function Footer() {
   return (
     <footer className="border-t bg-background">
       <div className="container px-4 py-12 mx-auto">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+        <div className="flex flex-col items-center justify-center text-center space-y-8">
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">StyleHub</h3>
-            <p className="text-sm text-muted-foreground">
-              Premium clothing for every occasion. Quality materials, timeless designs.
+            <div className="flex items-center justify-center gap-2">
+              <svg className="w-8 h-8 text-emerald-600" viewBox="0 0 64 64" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 6a2 2 0 0 0-2 2v3c0 1.2.6 2.2 1.6 2.8l2.4 1.3-4.2 4.2a2 2 0 1 0 2.8 2.8l5.2-5.2a2 2 0 0 0-.4-3.2l-3.4-1.9V8a2 2 0 0 0-2-2zm-2 22L4 44.5c-.8.5-1 1.5-.6 2.3a2 2 0 0 0 2.6.8L32 34l26 13.6a2 2 0 0 0 2.6-.8c.4-.8.2-1.8-.6-2.3L34 28a2 2 0 0 0-2 0z"/>
+              </svg>
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+                ReWear
+              </h3>
+            </div>
+            <p className="text-sm text-muted-foreground max-w-md mx-auto">
+              Circular fashion for a sustainable future. Quality pre-loved clothing with purpose.
             </p>
-            <div className="flex space-x-4">
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
+          </div>
+          
+          <div className="flex flex-col md:flex-row gap-8 pt-4">
+            <div>
+              <Link 
+                href="/about" 
+                className="text-muted-foreground hover:text-foreground text-sm font-medium transition-colors"
+              >
+                About Us
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
+            </div>
+            <div>
+              <Link 
+                href="/faq" 
+                className="text-muted-foreground hover:text-foreground text-sm font-medium transition-colors"
+              >
+                FAQ
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
+            </div>
+            <div>
+              <Link 
+                href="/help-center" 
+                className="text-muted-foreground hover:text-foreground text-sm font-medium transition-colors"
+              >
+                Help Center
               </Link>
             </div>
           </div>
-          <div className="space-y-4">
-            <h3 className="text-sm font-bold">Shop</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/products/men" className="text-muted-foreground hover:text-foreground">
-                  Men's Collection
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/women" className="text-muted-foreground hover:text-foreground">
-                  Women's Collection
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/new" className="text-muted-foreground hover:text-foreground">
-                  New Arrivals
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/sale" className="text-muted-foreground hover:text-foreground">
-                  Sale
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="space-y-4">
-            <h3 className="text-sm font-bold">Company</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/about" className="text-muted-foreground hover:text-foreground">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-muted-foreground hover:text-foreground">
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link href="/careers" className="text-muted-foreground hover:text-foreground">
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link href="/stores" className="text-muted-foreground hover:text-foreground">
-                  Store Locator
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="space-y-4">
-            <h3 className="text-sm font-bold">Customer Service</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/help" className="text-muted-foreground hover:text-foreground">
-                  Help Center
-                </Link>
-              </li>
-              <li>
-                <Link href="/shipping" className="text-muted-foreground hover:text-foreground">
-                  Shipping & Returns
-                </Link>
-              </li>
-              <li>
-                <Link href="/size-guide" className="text-muted-foreground hover:text-foreground">
-                  Size Guide
-                </Link>
-              </li>
-              <li>
-                <Link href="/faq" className="text-muted-foreground hover:text-foreground">
-                  FAQ
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="flex flex-col items-center justify-between gap-4 border-t pt-8 mt-8 md:flex-row">
-          <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} StyleHub. All rights reserved.</p>
-          <div className="flex gap-4 text-xs text-muted-foreground">
-            <Link href="/privacy" className="hover:text-foreground">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="hover:text-foreground">
-              Terms of Service
-            </Link>
-            <Link href="/cookies" className="hover:text-foreground">
-              Cookie Policy
-            </Link>
+          
+          <div className="pt-4 border-t border-gray-200 w-full max-w-xs">
+            <p className="text-xs text-muted-foreground">
+              © {new Date().getFullYear()} ReWear. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
