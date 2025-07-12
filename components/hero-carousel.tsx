@@ -22,21 +22,21 @@ const defaultSlides: HeroSlide[] = [
   {
     title: "Sustainable Fashion Revolution",
     subtitle: "Join 50K+ eco-conscious fashion lovers",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/hero-banner-1.jpg",
     cta: "Start Your Journey",
     badge: "New Collection"
   },
   {
     title: "Designer Pieces, Accessible Prices",
     subtitle: "Luxury fashion for everyone",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/hero-banner-2.jpg",
     cta: "Explore Collection",
     badge: "Trending Now"
   },
   {
     title: "Local Community, Global Impact",
     subtitle: "Connect with fashion lovers nearby",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/hero-banner-3.jpg",
     cta: "Find Your Tribe",
     badge: "Community Picks"
   },

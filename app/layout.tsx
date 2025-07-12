@@ -8,8 +8,39 @@ import { CartProvider } from "@/components/cart-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "StyleHub | Premium Clothing Brand",
-  description: "Discover the latest fashion trends with our premium clothing collection",
+  title: "ReWear | Sustainable Circular Fashion",
+  description: "Join the circular fashion movement. Buy, sell, and swap pre-loved clothing for a sustainable wardrobe.",
+  keywords: ["sustainable fashion", "circular fashion", "secondhand clothing", "pre-loved fashion", "eco-friendly clothing"],
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#042f2e' }
+  ],
+  openGraph: {
+    title: 'ReWear | Sustainable Circular Fashion',
+    description: 'Join the circular fashion movement. Buy, sell, and swap pre-loved clothing for a sustainable wardrobe.',
+    url: 'https://rewear-eco.com',
+    siteName: 'ReWear',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ReWear | Sustainable Circular Fashion',
+    description: 'Join the circular fashion movement. Buy, sell, and swap pre-loved clothing for a sustainable wardrobe.',
+    images: ['/twitter-image.jpg'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
