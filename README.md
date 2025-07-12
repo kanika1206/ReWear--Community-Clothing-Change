@@ -6,10 +6,10 @@
 ---
 
 ## Team Members
-Kanika (Team Leader) : 2023ucs0095@iitjammu.ac.in
-Japnoor Kaur : 2023uma0215@iitjammu.ac.in
-Kiran Sehrawat : 2023ucs0099@iitjammu.ac.in
-Isha Singh : 2023uma0214@iitjammu.ac.in
+- Kanika (Team Leader) : 2023ucs0095@iitjammu.ac.in
+- Japnoor Kaur : 2023uma0215@iitjammu.ac.in
+- Kiran Sehrawat : 2023ucs0099@iitjammu.ac.in
+- Isha Singh : 2023uma0214@iitjammu.ac.in
 
 ---
 
