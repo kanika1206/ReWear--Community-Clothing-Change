@@ -3,6 +3,8 @@
 **ReWear** is a sustainable fashion platform designed as part of the Odoo Hackathon (Problem Statement 3). It enables users to exchange unused clothing through direct swaps or a point-based redemption system. The goal is to promote environmentally conscious fashion by encouraging reuse and reducing textile waste.
 
 
+
+
 ------
 
 ## Team Members
